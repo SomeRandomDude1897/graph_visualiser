@@ -1,6 +1,8 @@
 #include "Graph.h"
 #include <fstream>
 #include <iostream>
+#include <algorithm>
+#include <deque>
 
 void Graph::Load(std::string filename)
 {
@@ -19,8 +21,42 @@ void Graph::Load(std::string filename)
     {
         int in, out;
         fin >> in >> out;
-        Graph::vertexes[in-1].neighbours.push_back(Graph::vertexes[out-1]);
-        Graph::vertexes[out-1].neighbours.push_back(Graph::vertexes[in-1]);
+        Graph::vertexes[in-1].neighbours.push_back(&Graph::vertexes[out-1]);
+        Graph::vertexes[out-1].neighbours.push_back(&Graph::vertexes[in-1]);
     }
     std::cout << "Finished loading graph data!!\n";
+}
+
+std::map<int, std::vector<int>> Graph::GetDistancesForVertex(int vertex_number)
+{
+    std::map<int, std::vector<int>> result = {
+        {0, {vertex_number}}
+    };
+    std::deque<std::pair <int, vertex*>> queue;
+    queue.push_back({0, &Graph::vertexes[vertex_number]});
+    std::vector<int> was = {vertex_number};
+    while (queue.size() > 0)
+    {
+        for (int i = 0; i < queue[0].second->neighbours.size(); i++)
+        {
+            if (std::find(was.begin(), was.end(), queue[0].second->neighbours[i]->name) == was.end())
+            {
+                queue.push_back({queue[0].first + 1, queue[0].second->neighbours[i]});
+                result[queue[0].first + 1].push_back(queue[0].second->neighbours[i]->name);
+                was.push_back(queue[0].second->neighbours[i]->name);
+            }
+        }
+        queue.pop_front();
+    }
+    return result;
+}
+
+std::map<int, std::map<int, std::vector<int>>> Graph::GetDistancesTable()
+{
+    std::map<int, std::map<int, std::vector<int>>> result;
+    for (int i = 0; i < Graph::vertexes.size(); i++)
+    {
+        result[i] = Graph::GetDistancesForVertex(i);
+    }
+    return result;
 }
