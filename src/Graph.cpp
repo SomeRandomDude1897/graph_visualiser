@@ -27,6 +27,11 @@ void Graph::Load(std::string filename)
     std::cout << "Finished loading graph data!!\n";
 }
 
+std::vector<vertex> Graph::GetVertexes()
+{
+    return Graph::vertexes;
+}
+
 std::map<int, std::vector<int>> Graph::GetDistancesForVertex(int vertex_number)
 {
     std::map<int, std::vector<int>> result = {

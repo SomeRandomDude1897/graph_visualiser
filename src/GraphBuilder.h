@@ -1,14 +1,10 @@
 #include <vector>
+#include <map>
 #include "Graph.h"
 
 #define K 9
-#define L 30
+#define L 60
 
-struct point
-{
-    int name;
-    double x, y;
-};
 
 class GraphBuilder 
 {

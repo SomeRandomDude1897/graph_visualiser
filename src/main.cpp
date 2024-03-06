@@ -1,5 +1,5 @@
 #include <iostream>
-#include "GraphBuilder.h"
+#include "GraphDrawer.h"
 using namespace std;
 
 int main()
@@ -10,21 +10,13 @@ int main()
     GraphBuilder* mygraphbuilder = new GraphBuilder();
     mygraphbuilder -> CountConstraints(distance_data);
     std::vector<point> points = mygraphbuilder -> GetPoints();
-    double middle_x = 0;
-    double middle_y = 0;
-
-    for (int i = 0; i < points.size(); i ++)
+    /*
+    for(int i = 0; i < points.size(); i ++)
     {
-        middle_x += (int) (points[i].x);
-        middle_y += (int) (points[i].y);
+        std::cout << points[i].x << " " << points[i].y << '\n';
     }
-
-    middle_x /= points.size();
-    middle_y /= points.size();
-
-    for (int i = 0; i < points.size(); i ++)
-    {
-        std::cout << points[i].name << " : " << (int) (points[i].x -  middle_x ) << " " << (int) (points[i].y - middle_y) << '\n';
-    }
+    */
+    GraphDrawer* mydrawer = new GraphDrawer();
+    mydrawer -> DrawGraph(points, mygraph->GetVertexes());
     return 0;
 }

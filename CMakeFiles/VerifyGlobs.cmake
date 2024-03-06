@@ -7,6 +7,7 @@ file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/romik/projects/graphbuilder/.
 set(OLD_GLOB
   "C:/Users/romik/projects/graphbuilder/./src/Graph.cpp"
   "C:/Users/romik/projects/graphbuilder/./src/GraphBuilder.cpp"
+  "C:/Users/romik/projects/graphbuilder/./src/GraphDrawer.cpp"
   "C:/Users/romik/projects/graphbuilder/./src/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

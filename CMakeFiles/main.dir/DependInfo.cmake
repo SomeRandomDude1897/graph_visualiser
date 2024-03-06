@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/romik/projects/graphbuilder/src/Graph.cpp" "CMakeFiles/main.dir/src/Graph.cpp.obj" "gcc" "CMakeFiles/main.dir/src/Graph.cpp.obj.d"
   "C:/Users/romik/projects/graphbuilder/src/GraphBuilder.cpp" "CMakeFiles/main.dir/src/GraphBuilder.cpp.obj" "gcc" "CMakeFiles/main.dir/src/GraphBuilder.cpp.obj.d"
+  "C:/Users/romik/projects/graphbuilder/src/GraphDrawer.cpp" "CMakeFiles/main.dir/src/GraphDrawer.cpp.obj" "gcc" "CMakeFiles/main.dir/src/GraphDrawer.cpp.obj.d"
   "C:/Users/romik/projects/graphbuilder/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.obj" "gcc" "CMakeFiles/main.dir/src/main.cpp.obj.d"
   )
 

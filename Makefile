@@ -180,6 +180,30 @@ src/GraphBuilder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/GraphBuilder.cpp.s
 .PHONY : src/GraphBuilder.cpp.s
 
+src/GraphDrawer.obj: src/GraphDrawer.cpp.obj
+.PHONY : src/GraphDrawer.obj
+
+# target to build an object file
+src/GraphDrawer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/GraphDrawer.cpp.obj
+.PHONY : src/GraphDrawer.cpp.obj
+
+src/GraphDrawer.i: src/GraphDrawer.cpp.i
+.PHONY : src/GraphDrawer.i
+
+# target to preprocess a source file
+src/GraphDrawer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/GraphDrawer.cpp.i
+.PHONY : src/GraphDrawer.cpp.i
+
+src/GraphDrawer.s: src/GraphDrawer.cpp.s
+.PHONY : src/GraphDrawer.s
+
+# target to generate assembly for a file
+src/GraphDrawer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/GraphDrawer.cpp.s
+.PHONY : src/GraphDrawer.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -219,6 +243,9 @@ help:
 	@echo ... src/GraphBuilder.obj
 	@echo ... src/GraphBuilder.i
 	@echo ... src/GraphBuilder.s
+	@echo ... src/GraphDrawer.obj
+	@echo ... src/GraphDrawer.i
+	@echo ... src/GraphDrawer.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
