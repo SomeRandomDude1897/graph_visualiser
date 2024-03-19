@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/romik/projects/graphbuilder/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\main.dir\\src\\Graph.cpp.obj -c C:\\Users\\romik\\projects\\graphbuilder\\src\\Graph.cpp",
+  "file": "C:/Users/romik/projects/graphbuilder/src/Graph.cpp",
+  "output": "CMakeFiles/main.dir/src/Graph.cpp.obj"
+},
+{
+  "directory": "C:/Users/romik/projects/graphbuilder/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\main.dir\\src\\GraphBuilder.cpp.obj -c C:\\Users\\romik\\projects\\graphbuilder\\src\\GraphBuilder.cpp",
+  "file": "C:/Users/romik/projects/graphbuilder/src/GraphBuilder.cpp",
+  "output": "CMakeFiles/main.dir/src/GraphBuilder.cpp.obj"
+},
+{
+  "directory": "C:/Users/romik/projects/graphbuilder/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\main.dir\\src\\GraphDrawer.cpp.obj -c C:\\Users\\romik\\projects\\graphbuilder\\src\\GraphDrawer.cpp",
+  "file": "C:/Users/romik/projects/graphbuilder/src/GraphDrawer.cpp",
+  "output": "CMakeFiles/main.dir/src/GraphDrawer.cpp.obj"
+},
+{
+  "directory": "C:/Users/romik/projects/graphbuilder/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c C:\\Users\\romik\\projects\\graphbuilder\\src\\main.cpp",
+  "file": "C:/Users/romik/projects/graphbuilder/src/main.cpp",
+  "output": "CMakeFiles/main.dir/src/main.cpp.obj"
+}
+]

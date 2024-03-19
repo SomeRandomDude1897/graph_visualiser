@@ -1,12 +1,22 @@
 CMakeFiles/main.dir/src/GraphDrawer.cpp.obj: \
  C:\Users\romik\projects\graphbuilder\src\GraphDrawer.cpp \
  C:\Users\romik\projects\graphbuilder\src\GraphDrawer.h \
- C:/msys64/ucrt64/include/c++/13.2.0/map \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/requires_hosted.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/cstdint \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/msys64/ucrt64/include/c++/13.2.0/pstl/pstl_config.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h C:/msys64/ucrt64/include/crtdefs.h \
+ C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
+ C:/msys64/ucrt64/include/_mingw_mac.h \
+ C:/msys64/ucrt64/include/_mingw_secapi.h \
+ C:/msys64/ucrt64/include/vadefs.h \
+ C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h \
+ C:/msys64/ucrt64/include/stddef.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/map \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_tree.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_algobase.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/functexcept.h \
@@ -50,13 +60,6 @@ CMakeFiles/main.dir/src/GraphDrawer.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/erase_if.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/memory_resource.h \
  C:/msys64/ucrt64/include/c++/13.2.0/cstddef \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h \
- C:/msys64/ucrt64/include/stddef.h C:/msys64/ucrt64/include/crtdefs.h \
- C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
- C:/msys64/ucrt64/include/_mingw_mac.h \
- C:/msys64/ucrt64/include/_mingw_secapi.h \
- C:/msys64/ucrt64/include/vadefs.h \
- C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/uses_allocator_args.h \
  C:/msys64/ucrt64/include/c++/13.2.0/vector \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_uninitialized.h \
@@ -109,9 +112,14 @@ CMakeFiles/main.dir/src/GraphDrawer.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/cerrno \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/charconv.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/basic_string.tcc \
- C:/msys64/ucrt64/include/c++/13.2.0/cstdint \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
- C:/msys64/ucrt64/include/stdint.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/algorithm \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_algo.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/algorithmfwd.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_heap.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/uniform_int_dist.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_tempbuf.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/pstl/glue_algorithm_defs.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/pstl/execution_defs.h \
  C:/msys64/ucrt64/include/c++/13.2.0/cmath \
  C:/msys64/ucrt64/include/math.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/specfun.h \
@@ -170,12 +178,4 @@ CMakeFiles/main.dir/src/GraphDrawer.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/basic_ios.tcc \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/13.2.0/istream \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/istream.tcc \
- C:/msys64/ucrt64/include/c++/13.2.0/algorithm \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_algo.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/algorithmfwd.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_heap.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/uniform_int_dist.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_tempbuf.h \
- C:/msys64/ucrt64/include/c++/13.2.0/pstl/glue_algorithm_defs.h \
- C:/msys64/ucrt64/include/c++/13.2.0/pstl/execution_defs.h
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/istream.tcc

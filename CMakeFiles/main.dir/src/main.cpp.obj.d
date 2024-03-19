@@ -135,6 +135,9 @@ CMakeFiles/main.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/istream \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/istream.tcc \
  C:\Users\romik\projects\graphbuilder\src\GraphDrawer.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/cstdint \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
  C:/msys64/ucrt64/include/c++/13.2.0/map \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_tree.h \
  C:/msys64/ucrt64/include/c++/13.2.0/ext/aligned_buffer.h \
@@ -148,7 +151,4 @@ CMakeFiles/main.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/vector.tcc \
  C:\Users\romik\projects\graphbuilder\src\GraphBuilder.h \
- C:\Users\romik\projects\graphbuilder\src\Graph.h \
- C:/msys64/ucrt64/include/c++/13.2.0/cstdint \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
- C:/msys64/ucrt64/include/stdint.h
+ C:\Users\romik\projects\graphbuilder\src\Graph.h
