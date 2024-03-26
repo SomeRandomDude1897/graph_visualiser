@@ -5,6 +5,8 @@
 #include <fstream>
 #include <iostream>
 
+using distance_table = std::map<int, std::vector<int>>;
+
 void Graph::Load(std::string filename) {
   std::ifstream fin(filename);
   int vertexes_amount = 0;
@@ -27,9 +29,8 @@ void Graph::Load(std::string filename) {
 
 std::vector<vertex> Graph::GetVertexes() { return Graph::vertexes; }
 
-std::map<int, std::vector<int>> Graph::GetDistancesForVertex(
-    int vertex_number) {
-  std::map<int, std::vector<int>> result = {{0, {vertex_number}}};
+distance_table Graph::GetDistancesForVertex(int vertex_number) {
+  distance_table result = {{0, {vertex_number}}};
   std::deque<std::pair<int, vertex*>> queue;
   queue.push_back({0, &Graph::vertexes[vertex_number]});
   std::vector<int> was = {vertex_number};
@@ -48,8 +49,8 @@ std::map<int, std::vector<int>> Graph::GetDistancesForVertex(
   return result;
 }
 
-std::map<int, std::map<int, std::vector<int>>> Graph::GetDistancesTable() {
-  std::map<int, std::map<int, std::vector<int>>> result;
+lenmap Graph::GetDistancesTable() {
+  lenmap result;
   for (int i = 0; i < Graph::vertexes.size(); i++) {
     result[i] = Graph::GetDistancesForVertex(i);
   }

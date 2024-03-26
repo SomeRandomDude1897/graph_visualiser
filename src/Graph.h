@@ -2,6 +2,8 @@
 #include <string>
 #include <vector>
 
+using lenmap = std::map<int, std::map<int, std::vector<int>>>;
+
 struct vertex {
   int name = -1;
   std::vector<vertex*> neighbours = {};
@@ -19,7 +21,6 @@ class Graph {
  public:
   void Load(std::string);
   std::vector<vertex> GetVertexes();
-  std::map<int, std::map<int, std::vector<int>>>
-  GetDistancesTable();  // если что я готов это переделать, просто не придумал
-                        // ничего лучше в моменте
+  lenmap GetDistancesTable();  // если что я готов это переделать, просто не
+                               // придумал ничего лучше в моменте
 };

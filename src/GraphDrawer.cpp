@@ -110,7 +110,7 @@ void GraphDrawer::DrawGraph(std::vector<point> R2points,
         for (int x = min_vertex_x; x < max_vertex_x; x++) {
           if (abs((y_2 - y_1) * x + (x_1 - x_2) * y + y_1 * x_2 - x_1 * y_2) /
                   (pow(pow((y_2 - y_1), 2) + pow((x_1 - x_2), 2), 0.5)) <
-              1) {
+              2) {
             if (pow(pow(x - x_2, 2) + pow(y - y_2, 2), 0.5) > 6 &&
                 pow(pow(x - x_1, 2) + pow(y - y_1, 2), 0.5) > 6) {
               to_paint[y].push_back(x);

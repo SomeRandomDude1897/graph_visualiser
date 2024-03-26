@@ -1,3 +1,4 @@
+#include <ctime>
 #include <iostream>
 
 #include "GraphDrawer.h"
@@ -5,6 +6,7 @@
 using namespace std;
 
 int main() {
+  unsigned int start_time = clock();
   Graph* mygraph = new Graph();
   mygraph->Load("infile.txt");
   std::map<int, std::map<int, std::vector<int>>> distance_data =
@@ -20,5 +22,7 @@ int main() {
   */
   GraphDrawer* mydrawer = new GraphDrawer();
   mydrawer->DrawGraph(points, mygraph->GetVertexes());
+  unsigned int end_time = clock();
+  std::cout << "Time taken: " << (end_time - start_time) / 1000.0 << '\n';
   return 0;
 }

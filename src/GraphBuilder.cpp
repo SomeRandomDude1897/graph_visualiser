@@ -8,8 +8,6 @@ void GraphBuilder::CountConstraints(
     std::map<int, std::map<int, std::vector<int>>> distances) {
   distance_data = distances;
 
-  //!!!!!!!!!!!!!!!!!
-
   for (int i = 0; i < distance_data.size(); i++) {
     l.push_back({});
     k.push_back({});
@@ -18,8 +16,6 @@ void GraphBuilder::CountConstraints(
       k[i].push_back(0);
     }
   }
-
-  //!!!!!!!!!!!!!!!!!
 
   for (int i = 0; i < distance_data.size(); i++) {
     for (int j = 1; j < distance_data[i].size(); j++) {
@@ -112,8 +108,7 @@ double GraphBuilder::GetEnergySecondDiff_YY(int m) {
 }
 
 std::vector<point> GraphBuilder::GetPoints() {
-  int mega_iter_counter = 0;
-  double epsilon = 0.0000001;
+  double epsilon = 1;
   while (true) {
     double max_delta = -90328409238409320;
     int delta_name = -1;
@@ -127,9 +122,6 @@ std::vector<point> GraphBuilder::GetPoints() {
     }
 
     if (max_delta < epsilon) {
-      break;
-    }
-    if (mega_iter_counter > distance_data.size() * 500) {
       break;
     }
 
@@ -147,12 +139,11 @@ std::vector<point> GraphBuilder::GetPoints() {
       max_delta = pow(pow(GetEnergyDiff_X(delta_name), 2) +
                           pow(GetEnergyDiff_Y(delta_name), 2),
                       0.5);
-      iter_counter++;
-      if (iter_counter > 100) {
-        break;
-      }
     }
-    mega_iter_counter++;
+    iter_counter++;
+    if (iter_counter > 10000) {
+      break;
+    }
   }
   double middle_x = 0;
   double middle_y = 0;
@@ -180,6 +171,7 @@ std::vector<point> GraphBuilder::GetPoints() {
   }
   for (int i = 0; i < R2points.size(); i++) {
     R2points[i].x -= min_x - 40;
+    // use C++ (?)
     R2points[i].x = (int)R2points[i].x;
     R2points[i].y -= min_y - 40;
     R2points[i].y = (int)R2points[i].y;
