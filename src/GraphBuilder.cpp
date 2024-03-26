@@ -109,6 +109,7 @@ double GraphBuilder::GetEnergySecondDiff_YY(int m) {
 
 std::vector<point> GraphBuilder::GetPoints() {
   double epsilon = 1;
+  int mega_iter_counter = 0;
   while (true) {
     double max_delta = -90328409238409320;
     int delta_name = -1;
@@ -122,6 +123,12 @@ std::vector<point> GraphBuilder::GetPoints() {
     }
 
     if (max_delta < epsilon) {
+      break;
+    }
+
+    mega_iter_counter += 1;
+
+    if (mega_iter_counter > 100 * distance_data.size()) {
       break;
     }
 
@@ -139,10 +146,10 @@ std::vector<point> GraphBuilder::GetPoints() {
       max_delta = pow(pow(GetEnergyDiff_X(delta_name), 2) +
                           pow(GetEnergyDiff_Y(delta_name), 2),
                       0.5);
-    }
-    iter_counter++;
-    if (iter_counter > 10000) {
-      break;
+      iter_counter++;
+      if (iter_counter > 10000) {
+        break;
+      }
     }
   }
   double middle_x = 0;
